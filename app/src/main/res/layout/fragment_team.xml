@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.TeamFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/team_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:hint="Team Name"
+                android:inputType="text"
+                android:paddingLeft="8dp"></EditText>
+
+            <EditText
+                android:id="@+id/team_leader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_weight="7"
+                android:hint="Team Leader"
+                android:inputType="text"
+                android:paddingLeft="8dp"></EditText>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:background="#84C9FB"
+                android:clickable="true"
+                android:elevation="8dp"
+                android:fontFamily="@font/opensans"
+                android:padding="8dp"
+                android:visibility="visible"></Button>
+
+            <TextView
+                android:id="@+id/add_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:elevation="8dp"
+                android:fontFamily="@font/opensans"
+                android:text="Add Team"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:visibility="visible"></TextView>
+
+            <ProgressBar
+                android:id="@+id/progress"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:elevation="8dp"
+                android:padding="8dp"
+                android:visibility="gone"></ProgressBar>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="8dp"
+            android:background="#a9a9a9"></View>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp">
+
+            <ProgressBar
+                android:id="@+id/progress2"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:elevation="8dp"
+                android:padding="8dp"
+                android:visibility="visible"></ProgressBar>
+
+            <ListView
+                android:id="@+id/list_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"></ListView>
+        </RelativeLayout>
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.JudgesFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:hint="Name"
+            android:inputType="text"
+            android:paddingLeft="8dp"></EditText>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_weight="7"
+                android:hint="Username"
+                android:inputType="text"
+                android:paddingLeft="8dp"></EditText>
+
+            <Button
+                android:id="@+id/use_same"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="8dp"
+                android:layout_weight="5"
+                android:background="#84C9FB"
+                android:elevation="8dp"
+                android:fontFamily="@font/opensans"
+                android:padding="4dp"
+                android:text="Use same as name"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="12sp"></Button>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_weight="7"
+                android:hint="Password"
+                android:inputType="text"
+                android:paddingLeft="8dp"></EditText>
+
+            <Button
+                android:id="@+id/auto"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="8dp"
+                android:layout_weight="5"
+                android:background="#84C9FB"
+                android:elevation="8dp"
+                android:fontFamily="@font/opensans"
+                android:padding="2dp"
+                android:text="Auto Generate Password"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="12sp"></Button>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:background="#84C9FB"
+                android:clickable="true"
+                android:elevation="8dp"
+                android:fontFamily="@font/opensans"
+                android:padding="8dp"
+                android:visibility="visible"></Button>
+
+            <TextView
+                android:id="@+id/add_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:elevation="8dp"
+                android:fontFamily="@font/opensans"
+                android:text="Add Judge"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:visibility="visible"></TextView>
+
+            <ProgressBar
+                android:id="@+id/progress"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:elevation="8dp"
+                android:padding="8dp"
+                android:visibility="gone"></ProgressBar>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="#a9a9a9"></View>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp">
+
+            <ProgressBar
+                android:id="@+id/progress2"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:elevation="8dp"
+                android:padding="8dp"
+                android:visibility="visible"></ProgressBar>
+
+            <ListView
+                android:id="@+id/list_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"></ListView>
+        </RelativeLayout>
+    </LinearLayout>
+
+</FrameLayout>
